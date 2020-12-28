@@ -11,7 +11,13 @@
 
       </head>
 
-    <body style="background-color: #270b5c;">
+    <body style="background-color:#436b6e">
+      <button onclick="clickDetected()" id="btn" title="Go to top" class="btn btn-dark">Return to top</button>
+      <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
       <style>
     /*IMPORT FONTS FROM GOOGLE*/
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
@@ -30,11 +36,41 @@
         .btn:hover{
           background-color: #270b5c;
         }
+        #btn{
+          display: none;
+          z-index: 100;
+          position: fixed;
+          bottom: 20px;
+          right: 30px; 
+        }
+        /*PROGRESS BAR*/
+        .header {
+          position: fixed;
+          top: 0;
+          z-index: 1;
+          width: 100%;
+          background-color: #f1f1f1;
+        }
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: #ccc;
+          }
+
+          .progress-bar {
+            height: 6px;
+            background: #7a09eb;
+            width: 0%;
+          }
 
     /*SMOOTH SCROLLING*/
     html {
       scroll-behavior: smooth;
     }
+    .heading {
+  text-shadow: 3px 3px #000;
+  font-size: 50px;
+}
     .card 
     {
       background-color: lightblue;
@@ -181,29 +217,20 @@
   left: 50%;
   transform: translate(-50%, 800%);
 }
+.introduction {
+  height:100vh;
+}
+
       </style>
     <!--SELECT LANGUAGE AND CALL JS-->
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4 text-center" style="color: #ffffff;">
-                <h1>Select your language, please.</h1>
-                  <a onclick="langdetected(1)" style="text-decoration: none;color:#00855d;cursor:pointer;font-size: 19px;">Español</a>
-                  |
-                  <a onclick="langdetected(2)" style="text-decoration: none;color: #00855d; cursor:pointer; font-size: 19px;">Français</a>
-            </div>
-        </div>   
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-        </nav>
+
         <!--INTRO SECTION-->
-    <section class="introduction" style="background-color:#436b6e; height: 800px;">
-        <h1 style="text-align: center;font-family: 'Oswald', sans-serif;color: #ffffff;">Hello world, I'm Juan Romero</h1>
-          <div class="int-div" style="margin-top: 8%;"><h5 style="color: #ffffff; text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
+    <section style="background-color:#436b6e;height:100vh;">
+        <h1 class="heading" style="text-align: center;font-family: 'Oswald', sans-serif;color: #ffffff;">Hello world, I'm Juan Romero</h1>
+ <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style="color: #ffffff; text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
+
             <div style="text-align:center;">
-              <a href="#languages" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;">Let's get started</button></a>  
+              <a href="#second" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;" onclick="appear()">Let's get started</button></a>  
           </div>
         <div class="container">
           <div class="txt">
@@ -224,68 +251,17 @@
       </section>
     <!--FIRST SECTION ENDING-->  
     <!--PROGRAMMING TOOLS-->
-  <section id="languages" style="background-color:#ffff; height: 1696px;">
-      <h1 style="text-align: center;font-family: 'Oswald', sans-serif; margin-bottom: 10px;">Programming Tools I've used</h1>
-      <div class="container">
-          <div class="row">
-              <div class="card col-sm-12 col-md-4" style="width: 250px;">
-                <img src="assets/html5.svg" style="height: 100px;"class="card-img-top text-center">
-                <div class="card-body">
-                  <h5 class="card-title text-center">HTML</h5>
-                </div>
-              </div>
-              <div class="card col-sm-12 col-md-4" style="width: 250px;">
-                  <img src="assets/css3.svg" style="height: 100px;"class="card-img-top text-center">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">CSS</h5>
-                  </div>
-              </div>
-              <div class="card col-sm-12 col-md-4" style="width: 250px;">
-                <img src="assets/logo-javascript.svg" style="height: 100px;"class="card-img-top text-center">
-                <div class="card-body">
-                  <h5 class="card-title text-center">JavaScript</h5>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-4" style="width: 250px;">
-              <img src="assets/icons8-php-logo.svg" style="height: 130px;width: 130px;"class="card-img-top php">
-              <div class="card-body">
-                <h5 class="card-title text-center">PHP</h5>
-              </div>
-          </div>     
-          <div class="card col-sm-12 col-md-4" style="width: 250px;">
-            <img src="assets/mysql-7.svg" style="height: 130px;width: 130px;"class="card-img-top php">
-            <div class="card-body">
-              <h5 class="card-title text-center">MySQL</h5>
-            </div>
-        </div>
-        <div class="card col-sm-12 col-md-4" style="width: 250px;">
-          <img src="assets/laravel-2.svg" style="height: 130px;"class="card-img-top text-center">
-          <div class="card-body">
-            <h5 class="card-title text-center">Laravel</h5>
-          </div>
-      </div>
-      <div class="card col-sm-12 col-md-12 col-lg-12" style="width: 250px;">
-        <img src="assets/bootstrap-5.svg" style="height: 130px;"class="card-img-top ">
-        <div class="card-body">
-          <h5 class="card-title text-center">Bootstrap</h5>
-        </div>
-        </div>
-        <div class="card col-sm-12 col-md-12 col-lg-12" style="width: 250px;">
-          <img src="assets/myadmin.png" style="height: 150px; width: 150px;"class="card-img-top php">
-          <div class="card-body">
-            <h5 class="card-title text-center">PHP MyAdmin</h5>
-          </div>
-          </div>
-      </div>
-    </div>  
+  <section id="second" style="background-color:#fff; height: 100vh;">
+    <h1 style="text-align:center">Programming tools I've used</h1>
+
   </section>
 <!--SECOND SECTION ENDING-->  
 <!--TIME LINE SECTION-->
   <section style="color:#ffffff;background-color: #436b6e;text-align: center;">
-     <h1>Here are some of my working experiences </h1>
+     <h1>Some of my working experiences </h1>
      <div class="container" style="color: #436b6e;">
-      <div class="row">
-          <div class="col-md-12">
+      <div class="row" style="height:max-content">
+          <div >
               <div class="card">
                   <div class="card-body">
                       <div id="content">
@@ -313,10 +289,61 @@
           </div>
       </div>
   </div>
+
   </section>   
+
 <!--ENDING TIMELINE-->
-<!--JS-->
-      <script src="main.js"></script>2
+
 <!--JS-->
     </body>
+    <script src="main.js"></script>
     </html>
+
+
+
+
+
+    <!-- <h1 style="text-align: center;font-family: 'Oswald', sans-serif; margin-bottom: 10px; font-size: medium;">Some Programming Tools I've used</h1>
+      <div class="container">
+          <div class="row">
+              <div class="card " style="width: 250px;">
+                <img src="assets/html5.svg" style="height: 100px;"class="card-img-top text-center">
+                <div class="card-body">
+                  <h5 class="card-title text-center">HTML</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 250px;">
+                  <img src="assets/css3.svg" style="height: 100px;"class="card-img-top text-center">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CSS</h5>
+                  </div>
+              </div>
+              <div class="card " style="width: 250px;">
+                <img src="assets/logo-javascript.svg" style="height: 100px;"class="card-img-top text-center">
+                <div class="card-body">
+                  <h5 class="card-title text-center">JavaScript</h5>
+                </div>
+            </div>
+          
+    
+          <div class="card " style="width: 250px;">
+            <img src="assets/mysql-7.svg" style="height: 130px;width: 130px;"class="card-img-top php">
+            <div class="card-body">
+              <h5 class="card-title text-center">MySQL</h5>
+            </div>
+        </div>
+        <div class="card col-sm-12 col-md-4" style="width: 250px;">
+          <img src="assets/laravel-2.svg" style="height: 130px;"class="card-img-top text-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">Laravel</h5>
+          </div>
+      </div>
+      <div class="card col-sm-12 col-md-12 col-lg-12" style="width: 250px;">
+        <img src="assets/bootstrap-5.svg" style="height: 130px;"class="card-img-top ">
+        <div class="card-body">
+          <h5 class="card-title text-center">Bootstrap</h5>
+        </div>
+        </div>
+
+      </div>
+    </div>  -->
