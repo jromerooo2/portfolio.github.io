@@ -11,7 +11,7 @@
 
       </head>
 
-    <body style="background-color:#436b6e">
+    <body >
       <button onclick="clickDetected()" id="btn" title="Go to top" class="btn btn-dark">Return to top</button>
       <div class="header">
         <div class="progress-container">
@@ -27,6 +27,21 @@
                   }
           body{
             font-family: 'Quicksand', sans-serif;
+          }
+
+          #section1{
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            color: #000;
+          }
+          #second{
+
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            color: #000;
+          }
+          #section3{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+            color: #fff;
           }
     /*BUTTON STYLING*/      
         .btn{
@@ -64,9 +79,7 @@
           }
 
     /*SMOOTH SCROLLING*/
-    html {
-      scroll-behavior: smooth;
-    }
+
     .heading {
   text-shadow: 3px 3px #000;
   font-size: 50px;
@@ -225,27 +238,28 @@
     <!--SELECT LANGUAGE AND CALL JS-->
 
         <!--INTRO SECTION-->
-    <section style="background-color:#436b6e;height:125vh;">
+    <section style="height:122vh;" id="section1">
+
         <h1 class="heading" style="text-align: center;font-family: 'Oswald', sans-serif;color: #ffffff;">Hello world, I'm Juan Romero</h1>
- <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style="color: #ffffff; text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
+ <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style=" text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
 
             <div style="text-align:center;">
               <a href="#second" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;" onclick="appear()">Let's get started</button></a>  
           </div>
         <div class="container">
           <div class="txt">
-            <h3>Gits and Mail</h3>
+            <h3 style="color: #000;">Gits and Mail</h3>
           </div>
           <div class="socials">
                 <a style="text-decoration: none;"href="https://github.com/jromerooo2"><img src="https://img.icons8.com/fluent/48/000000/github.png"/>
-                  <p style="color: #fff;" class="social" >GitHub</p></a>
+                  <p  class="social" style="color: #000;" >GitHub</p></a>
 
                 <a style="text-decoration: none;"href="https://gitlab.com/jromero66"><img src="https://img.icons8.com/color/48/000000/gitlab.png"class="social"/>
-                <p style="color: #fff;" class="social" >GitLab</p></a>
+                <p  class="social" style="color: #000;">GitLab</p></a>
  
          </div> 
          <div class="socials2">
-         <a href="#" style="color: lavender;">juan.romeroramos9@gmail.com</a>
+         <a href="#" style="color: #000;">juan.romeroramos9@gmail.com</a>
          </div>
         </div>
       </section>
@@ -257,7 +271,7 @@
   </section>
 <!--SECOND SECTION ENDING-->  
 <!--TIME LINE SECTION-->
-  <section style="color:#ffffff;background-color: #436b6e;text-align: center;">
+  <section style="text-align: center;" id="section3">
      <h1>Some of my working experiences </h1>
      <div class="container" style="color: #436b6e;">
       <div class="row" style="height:max-content">
@@ -266,20 +280,20 @@
                   <div class="card-body">
                       <div id="content">
                           <ul class="timeline">
-                              <li class="event" data-date="2 weeks">
-                                  <h3>Website developer & designer</h3>
+                              <li class="event">
+                                  <h3>Website development & designment</h3>
                                   <p>Website developer and designer for a dentistry using just Frontend (HTML, CSS and JavaScript), you can check the page by going to <a href="https://www.aranadentistry.com/" style="text-decoration: none;">Arana Dentistry</a></p>
                               </li>
-                              <li class="event" data-date="1 month">
-                                  <h3>Website developer & designer</h3>
+                              <li class="event" >
+                                  <h3>Website development & designment</h3>
                                   <p>Website developer and designer for a engineer (used as CV) using Frontend & Backend (HTML, CSS, JavaScript and PHP), you can check the page by going to <a href="https://marcoalfaro.000webhostapp.com/" style="text-decoration: none;">Marco Alfaro</a></p>
                               </li>
-                              <li class="event" data-date="5 days">
-                                  <h3>Website developer & designer</h3>
+                              <li class="event">
+                                  <h3>Website development & designment</h3>
                                   <p>This page is a project that I've developed as a proof of my work using Frontend (HTML, CSS and JavaScript)</p>
                               </li>
-                              <li class="event" data-date="On progress">
-                                  <h3>Backend developer</h3>
+                              <li class="event">
+                                  <h3>Backend development</h3>
                                   <p>I'm currently working in optimizing a backend system (DataBases, Requestes and Answers using MySQL and PHP) for Eureka's Medical Assitants. You can check my GitLab to have a closer look.</p>
                               </li>
                           </ul>
@@ -347,3 +361,5 @@
 
       </div>
     </div>  -->
+
+
