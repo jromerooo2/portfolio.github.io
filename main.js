@@ -1,27 +1,23 @@
 
 
 //Button for scrolling to top & appearing
-//let btn = document.getElementById("btn");
+let btn = document.getElementById("btn");
 //let secondSe = document.getElementById("second");
 //function for appearing 
 //function scrolldown(){
    //secondSe.onscroll(function(){appear})
 //}
 function appear(){
-    btn.style.display = "block";;
+    btn.style.display = "block";
 } 
 
 
 //function 4 returning 2 top
 
 function clickDetected(){
-    btn.addEventListener("click", function(){scrollin()})
+    btn.style.display = "none";
 }
 
-function scrollin() {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-}
 
 //Progress bar
 window.onscroll = function() {myFunction()};

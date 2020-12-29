@@ -4,15 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Juan's Portfolio</title>
-        <link href="main.css">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="smooth-scroll.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script>
+          smoothScroll.init({
+            selector: '[data-scroll]',
+            selectorHeader: null,
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 0,
+            callback: function (anchor, toggle) { }
+          });
+        </script>
 
       </head>
 
-    <body >
-      <button onclick="clickDetected()" id="btn" title="Go to top" class="btn btn-dark">Return to top</button>
+    <body data-spy="scroll">
+      <a data-scroll href="#section1"style="text-decoration: none;color: #ffffff;"><button id="btn" class="btn btn-dark btn-lg cta" onclick="clickDetected()"style="margin-top: 100px;" >Back to top</button></a>
       <div class="header">
         <div class="progress-container">
           <div class="progress-bar" id="myBar"></div>
@@ -233,18 +244,22 @@
 .introduction {
   height:100vh;
 }
+.card-img-top{
+  height: 100px;
+  width: 100px;
+}
 
       </style>
     <!--SELECT LANGUAGE AND CALL JS-->
 
         <!--INTRO SECTION-->
-    <section style="height:122vh;" id="section1">
+    <section style="height:132vh;" id="section1">
 
         <h1 class="heading" style="text-align: center;font-family: 'Oswald', sans-serif;color: #ffffff;">Hello world, I'm Juan Romero</h1>
  <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style=" text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
 
             <div style="text-align:center;">
-              <a href="#second" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;" onclick="appear()">Let's get started</button></a>  
+              <a data-scroll href="#second" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;" onclick="appear()">Let's get started</button></a>  
           </div>
         <div class="container">
           <div class="txt">
@@ -265,8 +280,39 @@
       </section>
     <!--FIRST SECTION ENDING-->  
     <!--PROGRAMMING TOOLS-->
-  <section id="second" style="background-color:#fff; height: 100vh;">
+  <section id="second" style="background-color:#fff; height: 200vh;">
     <h1 style="text-align:center">Programming tools I've used</h1>
+
+    <div class="cards">
+      <div class="card card1">
+          <div class="container">
+              <img src="assets/html5.svg"class="card-img-top" alt="las vegas">
+          </div>
+          <div class="details">
+              <h3>HTML</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+          </div>
+      </div>
+      <div class="card card2">
+          <div class="container">
+              <img src="assets/css3.svg" class="card-img-top" alt="New York">
+          </div>
+          <div class="details">
+              <h3>CSS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+          </div>
+      </div>
+      <div class="card card3">
+          <div class="container">
+              <img src="assets/javascript.svg" class="card-img-top"alt="Singapore">
+          </div>
+          <div class="details">
+              <h3>JavaScript</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+          </div>
+      </div>
+  </div>
+  
 
   </section>
 <!--SECOND SECTION ENDING-->  
@@ -307,6 +353,8 @@
   </section>   
 
 <!--ENDING TIMELINE-->
+
+<!--<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> !-->
 
 <!--JS-->
     </body>
