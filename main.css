@@ -2,7 +2,7 @@
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    padding: 20px;
+
     grid-gap: 40px;
 }
 .card{
@@ -20,9 +20,10 @@ img{
 
 .details{
     padding: 20px 10px;
+    
 }
 .details>h3{
-    color: #ffffff;
+    color: #000;
     font-weight: 600;
     font-size: 18px;
     margin: 10px 0 15px 0;
@@ -33,3 +34,20 @@ img{
     line-height: 30px;
     font-weight: 400;
 }
+.card-text{
+    color: black;
+    
+}
+.btn-outline-warning{
+      color: #000;
+      margin: 0 auto;
+}
+
+.ll{
+    border-radius: 25%;
+
+    text-align: left;
+
+}
+
+

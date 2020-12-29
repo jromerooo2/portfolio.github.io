@@ -22,7 +22,7 @@
 
       </head>
 
-    <body data-spy="scroll">
+    <body data-spy="scroll" >
       <a data-scroll href="#section1"style="text-decoration: none;color: #ffffff;"><button id="btn" class="btn btn-dark btn-lg cta" onclick="clickDetected()"style="margin-top: 100px;" >Back to top</button></a>
       <div class="header">
         <div class="progress-container">
@@ -59,9 +59,7 @@
           border-radius: 0%;
           margin: 0 auto;
         }
-        .btn:hover{
-          background-color: #270b5c;
-        }
+
         #btn{
           display: none;
           z-index: 100;
@@ -95,12 +93,13 @@
   text-shadow: 3px 3px #000;
   font-size: 50px;
 }
-    .card 
+    .card
     {
       background-color: lightblue;
-      margin-right: 80px;
-      margin-left: 80px;
-      margin-bottom: 20px;
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      margin: 0 auto;
     
     }
     .php{
@@ -280,17 +279,19 @@
       </section>
     <!--FIRST SECTION ENDING-->  
     <!--PROGRAMMING TOOLS-->
-  <section id="second" style="background-color:#fff; height: 200vh;">
+  <section id="second" style="background-color:#fff; margin-bottom: 150px;">
     <h1 style="text-align:center">Programming tools I've used</h1>
 
-    <div class="cards">
+    <div class="cards"  >
       <div class="card card1">
           <div class="container">
               <img src="assets/html5.svg"class="card-img-top" alt="las vegas">
           </div>
           <div class="details">
-              <h3>HTML</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+              <h3 class="card-text">HTML</h3>
+              <div class="ll">
+              <p class="text-muted">FrontEnd</p>
+              </div>
           </div>
       </div>
       <div class="card card2">
@@ -298,8 +299,10 @@
               <img src="assets/css3.svg" class="card-img-top" alt="New York">
           </div>
           <div class="details">
-              <h3>CSS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+              <h3 class="card-text">CSS</h3>
+              <div class="ll">
+                <p class="text-muted">FrontEnd</p>
+                </div>
           </div>
       </div>
       <div class="card card3">
@@ -307,12 +310,61 @@
               <img src="assets/javascript.svg" class="card-img-top"alt="Singapore">
           </div>
           <div class="details">
-              <h3>JavaScript</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+              <h3 class="card-text">JavaScript</h3>
+              <div class="ll">
+                <p class="text-muted">FrontEnd & <br>BackEnd</p>
+                </div>
           </div>
       </div>
+      <div class="card card4">
+        <div class="container">
+            <img src="assets/mysql-7.svg" class="card-img-top" style="margin-top: 20px;">
+        </div>
+        <div class="details">
+            <h3 class="card-text">MySQL</h3>
+            <div class="ll">
+              <p class="text-muted">BackEnd</p>
+              </div>
+        </div>
+    </div>
+    <div class="card card5">
+      <div class="container">
+          <img src="assets/php.png" class="card-img-top" style="margin-top: 20px;">
+      </div>
+      <div class="details">
+          <h3 class="card-text">PHP</h3>
+          <div class="ll">
+            <p class="text-muted">BackEnd</p>
+            </div>
+      </div>
   </div>
-  
+  <div class="card card4">
+    <div class="container">
+        <img src="assets/laravel-2.svg" class="card-img-top" style="margin-top: 20px;">
+    </div>
+    <div class="details">
+        <h3 class="card-text">Laravel</h3>
+        <div class="ll">
+          <p class="text-muted">BackEnd</p>
+          </div>
+    </div>
+</div>
+<div class="card card4">
+  <div class="container">
+      <img src="assets/bootstrap-5.svg" class="card-img-top" style="margin-top: 20px;">
+  </div>
+  <div class="details">
+      <h3 class="card-text">Bootstrap</h3>
+      <div class="ll">
+        <p class="text-muted">FrontEnd</p>
+        </div>
+  </div>
+</div>
+
+</div>
+
+
+    
 
   </section>
 <!--SECOND SECTION ENDING-->  
