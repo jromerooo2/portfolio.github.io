@@ -1,4 +1,13 @@
-
+@font-face {
+    font-family: "mexcellent";
+    src: url("assets/mexcellent.otf") format("opentype");
+  
+    }
+    @font-face {
+        font-family: "mexcellenttrg";
+        src: url("assets/mexcellentrg.otf") format("opentype");
+      
+        }
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -49,5 +58,4 @@ img{
     text-align: left;
 
 }
-
 

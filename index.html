@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juan's Portfolio</title>
+        <title>My Portfolio</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -34,15 +34,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
         ::selection{
-        background-color: khaki;
+        background-color: black;
                   }
           body{
             font-family: 'Quicksand', sans-serif;
           }
 
           #section1{
-            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-            color: #000;
+background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);            color: #fff;
           }
           #second{
 
@@ -50,9 +49,10 @@
             color: #000;
           }
           #section3{
-            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
+            background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); background-blend-mode: multiply;
             color: #fff;
+            margin-top: 20px;
+            
           }
     /*BUTTON STYLING*/      
         .btn{
@@ -249,38 +249,38 @@
 }
 
       </style>
-    <!--SELECT LANGUAGE AND CALL JS-->
+
 
         <!--INTRO SECTION-->
-    <section style="height:132vh;" id="section1">
+    <section style="height:100vh;" id="section1">
 
-        <h1 class="heading" style="text-align: center;font-family: 'Oswald', sans-serif;color: #ffffff;">Hello world, I'm Juan Romero</h1>
- <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style=" text-align: center;">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
+        <h1 class="heading" style="text-align: center;font-family: 'mexcellent', sans-serif;color: #d62323;">Hello world, I'm Juan Romero</h1>
+ <div class="int-div" style="margin-top: 8%;width: 300px; margin: 0 auto; "><h5 style=" text-align: center;#fff">Hey!, I'm excited to introduce myself and my skills. I'm a 15 years old student and passionate software developer. Lately I've learned so much and I want to keep it going on my study route. I've been practicing a lot in this area, and I'm ready to take any challenge!.</h5></div>
 
             <div style="text-align:center;">
               <a data-scroll href="#second" style="text-decoration: none;color: #ffffff;"><button class="btn btn-dark btn-lg cta" style="margin-top: 100px;" onclick="appear()">Let's get started</button></a>  
           </div>
         <div class="container">
           <div class="txt">
-            <h3 style="color: #000;">Gits and Mail</h3>
+            <h3 style="color: #fff;">Gits and Mail</h3>
           </div>
           <div class="socials">
                 <a style="text-decoration: none;"href="https://github.com/jromerooo2"><img src="https://img.icons8.com/fluent/48/000000/github.png"/>
-                  <p  class="social" style="color: #000;" >GitHub</p></a>
+                  <p  class="social" style="color: #fff;" >GitHub</p></a>
 
                 <a style="text-decoration: none;"href="https://gitlab.com/jromero66"><img src="https://img.icons8.com/color/48/000000/gitlab.png"class="social"/>
-                <p  class="social" style="color: #000;">GitLab</p></a>
+                <p  class="social" style="color: #fff;">GitLab</p></a>
  
          </div> 
          <div class="socials2">
-         <a href="#" style="color: #000;">juan.romeroramos9@gmail.com</a>
+         <a href="#" style="color: #fff;">juan.romeroramos9@gmail.com</a>
          </div>
         </div>
       </section>
     <!--FIRST SECTION ENDING-->  
     <!--PROGRAMMING TOOLS-->
-  <section id="second" style="background-color:#fff; margin-bottom: 150px;">
-    <h1 style="text-align:center">Programming tools I've used</h1>
+  <section id="second" style="background-color:#fff; margin-top: 15px;">
+    <h1 style="text-align:center" class="heading-second-section">Programming tools I've used</h1>
 
     <div class="cards"  >
       <div class="card card1">
@@ -414,52 +414,5 @@
     </html>
 
 
-
-
-
-    <!-- <h1 style="text-align: center;font-family: 'Oswald', sans-serif; margin-bottom: 10px; font-size: medium;">Some Programming Tools I've used</h1>
-      <div class="container">
-          <div class="row">
-              <div class="card " style="width: 250px;">
-                <img src="assets/html5.svg" style="height: 100px;"class="card-img-top text-center">
-                <div class="card-body">
-                  <h5 class="card-title text-center">HTML</h5>
-                </div>
-              </div>
-              <div class="card" style="width: 250px;">
-                  <img src="assets/css3.svg" style="height: 100px;"class="card-img-top text-center">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">CSS</h5>
-                  </div>
-              </div>
-              <div class="card " style="width: 250px;">
-                <img src="assets/logo-javascript.svg" style="height: 100px;"class="card-img-top text-center">
-                <div class="card-body">
-                  <h5 class="card-title text-center">JavaScript</h5>
-                </div>
-            </div>
-          
-    
-          <div class="card " style="width: 250px;">
-            <img src="assets/mysql-7.svg" style="height: 130px;width: 130px;"class="card-img-top php">
-            <div class="card-body">
-              <h5 class="card-title text-center">MySQL</h5>
-            </div>
-        </div>
-        <div class="card col-sm-12 col-md-4" style="width: 250px;">
-          <img src="assets/laravel-2.svg" style="height: 130px;"class="card-img-top text-center">
-          <div class="card-body">
-            <h5 class="card-title text-center">Laravel</h5>
-          </div>
-      </div>
-      <div class="card col-sm-12 col-md-12 col-lg-12" style="width: 250px;">
-        <img src="assets/bootstrap-5.svg" style="height: 130px;"class="card-img-top ">
-        <div class="card-body">
-          <h5 class="card-title text-center">Bootstrap</h5>
-        </div>
-        </div>
-
-      </div>
-    </div>  -->
 
 
